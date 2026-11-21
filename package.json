@@ -1,0 +1,14 @@
+{
+  "name": "chatverdict",
+  "version": "1.0.0",
+  "description": "Analyseur de conversations WhatsApp et Instagram : compatibilité, détection de toxicité, tribunal qui a tort et perspectives fille/gars",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": ["chat-analysis", "relationship-advice", "sentiment-analysis", "nlp", "whatsapp", "instagram"],
+  "author": "je-tu-il",
+  "license": "MIT"
+}
