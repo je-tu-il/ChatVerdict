@@ -13,7 +13,7 @@
             <span class="brand-icon">⚖️</span>
             <div>
                 <h1 class="brand-title">ChatVerdict</h1>
-                <div class="brand-subtitle">AI & HEURISTIC RELATIONSHIP ANALYZER</div>
+                
             </div>
         </div>
         <div style="font-size: 0.85rem; color: var(--accent-pink); font-weight: 700;">
@@ -24,8 +24,7 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-box">
-            <span class="hero-tag">PSYCHOLOGIE & ARBITRAGE DE COUPLE</span>
-            <h2 class="hero-heading">Décodez vos Conversations & Sachez Qui a Tort</h2>
+            <h2 class="hero-heading">Relisez une conversation avec du recul</h2>
             <p class="hero-desc">
                 Importez un échange WhatsApp, Instagram ou SMS pour mesurer l'indice de toxicité, la compatibilité amoureuse et obtenir une analyse croisée fille/gars.
             </p>
@@ -42,21 +41,17 @@
         <!-- Input Section -->
         <section class="glass-card">
             <div class="card-header">
-                <div class="card-title">📝 Collez ou Déposez votre Conversation</div>
+                <label class="card-title" for="chatInput">Votre conversation</label>
                 <div style="font-size: 0.8rem; color: var(--text-muted);">Format : Prénom: Message</div>
             </div>
 
             <textarea id="chatInput" placeholder="Exemple :&#10;Alice: Pourquoi tu réponds plus ?&#10;Bob: J'étais occupé..."></textarea>
 
             <!-- File dropzone -->
-            <div id="fileDropArea" style="border: 1px dashed var(--border); border-radius: 0.75rem; padding: 0.75rem; text-align: center; cursor: pointer; background: rgba(10,14,23,0.4); margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">
-                📁 Glissez un export WhatsApp (.txt) ou cliquez pour importer un fichier
-                <input type="file" id="fileInputUpload" accept=".txt,.json" style="display: none;" />
-            </div>
+            <button type="button" id="fileDropArea" style="border: 1px dashed var(--border); border-radius: 0.75rem; padding: 0.75rem; text-align: center; cursor: pointer; background: rgba(10,14,23,0.4); margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-muted);">Importer ou déposer un fichier (.txt ou .json)</button>
+            <input type="file" id="fileInputUpload" accept=".txt,.json" style="display: none;" />
 
-            <button id="btnAnalyze" class="btn-magic">
-                ✨ Lancer le Verdict & l'Analyse Psychologique
-            </button>
+            <button id="btnAnalyze" class="btn-magic">Analyser la conversation</button>
         </section>
 
         <!-- RESULTS SECTION (DASHBOARD) -->
